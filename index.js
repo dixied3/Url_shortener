@@ -13,7 +13,7 @@ const ejsMate = require("ejs-mate") ;
 const methodOverride = require("method-override");
 
 
-const dbURL = process.env.DB_URL ; 
+const dbURL = process.env.MONGO_URL ; 
 
 main()
     .then(() => {console.log("Database connected")})
