@@ -33,7 +33,6 @@ module.exports.getNewURL = async (req, res, next) => {
             vistHistory: [] , 
             expiresAt: Date.now() + expiryDuration
         });
-
         req.flash("success", "Short URL created successfully!");
         res.redirect("/");
     } catch (err) {

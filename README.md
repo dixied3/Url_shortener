@@ -13,4 +13,8 @@ A full-stack URL shortening service that lets users:
 
 **Screenshot:**
 -Home Page
-![Shorten URL](screenshots/GET.png)
+
+(screenshots/GET.png)
+
+-POST Route Testing 
+
