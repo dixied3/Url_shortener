@@ -12,5 +12,5 @@ A full-stack URL shortening service that lets users:
 ### 🔐 Shorten any long URL
 
 **Screenshot:**
-
+-Home Page
 ![Shorten URL](screenshots/GET.png)
