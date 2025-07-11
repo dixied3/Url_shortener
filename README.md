@@ -27,3 +27,7 @@ A full-stack URL shortening service that lets users:
 -FRONTEND for seamless user interactivity
 
 ![Shorten URL](screenshots/FRONTEND.png)
+
+-Copy to Clipboard 
+
+![Shorten URL](screenshots/COPY.png)

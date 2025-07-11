@@ -71,6 +71,11 @@
     .delete , .copy {
       width: 5rem;
     }
+
+    .cardd {
+      border : none !important;
+      border-radius: 2rem;
+    }
   
   </style>
 
@@ -115,13 +120,13 @@
     
 
     <% if (allUrls && allUrls.length > 0) { %>
-      <h2 class="text-center mb-4">📄 All Generated URLs</h2>
+      <h2 class="text-center mb-4 ">📄 All Generated URLs</h2>
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
         <% allUrls.forEach(url => { %>
           <div class="col">
-            <div class="card shadow-sm h-100">
+            <div class="card shadow-sm h-100 cardd">
               <div class="card-body">
-                <h5 class="card-title">🔗 Short URL</h5>
+                
                 <p class="card-text mb-1"><strong>Original:</strong><br>
                   <a href="<%= url.enteredUrl %>" target="_blank"><%= url.enteredUrl %></a>
                 </p>
