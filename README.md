@@ -24,3 +24,6 @@ A full-stack URL shortening service that lets users:
 
 ![Shorten URL](screenshots/POST_response.png)
 
+-FRONTEND for seamless user interactivity
+
+![Shorten URL](screenshots/FRONTEND.png)
