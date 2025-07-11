@@ -69,13 +69,13 @@ A full-stack URL shortening service that lets users:
 
 1. Clone the repo  
 
-git clone https://github.com/your-username/url-shortener.git
-cd url-shortener
+- git clone https://github.com/your-username/url-shortener.git
+- cd url-shortener
 
 
 2. Install dependencies  
 
-npm install 
+- npm install 
 
 
 3. Configure `.env`  
@@ -90,6 +90,6 @@ npm install
 nodemon index.js
 
 
---Then visit
--📍 http://localhost:3000
+5. Then visit
+- 📍 http://localhost:3000
 
