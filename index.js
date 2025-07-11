@@ -13,7 +13,7 @@ const ejsMate = require("ejs-mate") ;
 const methodOverride = require("method-override");
 
 
-const dbURL = process.env.MONGO_URL ; 
+const dbURL = 'mongodb://127.0.0.1:27017/shortUrl' ; 
 
 main()
     .then(() => {console.log("Database connected")})
