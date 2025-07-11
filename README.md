@@ -18,3 +18,9 @@ A full-stack URL shortening service that lets users:
 
 -POST Route Testing 
 
+![Shorten URL](screenshots/POST.png)
+
+-IN DATABASE (based on the above screenshot)
+
+![Shorten URL](screenshots/POST_response.png)
+
