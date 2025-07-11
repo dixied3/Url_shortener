@@ -31,3 +31,7 @@ A full-stack URL shortening service that lets users:
 -Copy to Clipboard 
 
 ![Shorten URL](screenshots/COPY.png)
+
+-Delete URL 
+
+![Shorten URL](screenshots/DELETE.png)
