@@ -87,9 +87,14 @@ A full-stack URL shortening service that lets users:
 
 4. Run the server
 
-nodemon index.js
+- nodemon index.js
 
 
 5. Then visit
 - 📍 http://localhost:3000
+
+
+## 📝 License
+
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
 
