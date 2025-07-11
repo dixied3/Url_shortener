@@ -3,9 +3,14 @@
 A full-stack URL shortening service that lets users:
 - 🔒 Shorten long URLs
 - 📊 Track click analytics
-- ⏳ Set optional expiration dates
-- ⚠️ Handle rate limiting (10 req/min per IP)
-- ❌ Auto-delete expired URLs
-- 🌐 Use a simple and elegant frontend
-- 📷 Generate QR codes
+- ⏳ Set expiration dates
 - 📋 Copy links with one click
+
+
+## 🚀 Features
+
+### 🔐 Shorten any long URL
+
+**Screenshot:**
+
+![Shorten URL](screenshots/GET.png)
