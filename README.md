@@ -43,5 +43,19 @@ A full-stack URL shortening service that lets users:
 |-----------|---------------------------|
 | Backend   | Node.js, Express.js       |
 | Database  | MongoDB (Mongoose)        |
-| Frontend  | HTML, CSS, Bootstrap, JS  |
-| Extras    | MongoDB TTL, QRServer API |
+| Frontend  | HTML, CSS, Bootstrap, JS , EJS |
+
+### GET /
+- Gets the frontend
+
+### POST /url
+
+- Runs the backend logic and generated SHORTID . 
+
+### GET /url/:id
+
+- Redirects to the Original URL when the shorten URL is cliked . 
+
+### DELETE /url/:shortId/delete
+
+- Deletes the entire URL entry data from the database
