@@ -65,6 +65,31 @@ A full-stack URL shortening service that lets users:
 
 ---
 
+### 💻 Local Setup Instructions
+
+1. Clone the repo  
+
+git clone https://github.com/your-username/url-shortener.git
+cd url-shortener
 
 
+2. Install dependencies  
+
+npm install 
+
+
+3. Configure `.env`  
+
+PORT=3000
+MONGO_URL=mongodb://localhost:27017/Short_url
+SESSION_SECRET=shorturlsupersecret11
+
+
+4. Run the server
+
+nodemon index.js
+
+
+--Then visit
+-📍 http://localhost:3000
 
