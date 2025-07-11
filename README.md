@@ -45,6 +45,9 @@ A full-stack URL shortening service that lets users:
 | Database  | MongoDB (Mongoose)        |
 | Frontend  | HTML, CSS, Bootstrap, JS , EJS |
 
+
+---
+
 ### GET /
 - Gets the frontend
 
@@ -59,3 +62,9 @@ A full-stack URL shortening service that lets users:
 ### DELETE /url/:shortId/delete
 
 - Deletes the entire URL entry data from the database
+
+---
+
+
+
+
