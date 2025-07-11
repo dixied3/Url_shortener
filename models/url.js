@@ -12,7 +12,14 @@ const urlSchema = new Schema({
     } , 
     vistHistory : [
         {timestamp : {type : Number}}
-    ]
+    ] , 
+    createdAt : {
+        type : Number , 
+        default : Date.now() 
+    } , 
+    expiresAt : {
+        type : Number 
+    }
 }) ; 
 
 const URL = mongoose.model("URL" , urlSchema) ; 

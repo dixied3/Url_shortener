@@ -25,10 +25,13 @@ module.exports.getNewURL = async (req, res, next) => {
         }
 
         const shortId = nanoid(8);
+        const expiryDuration = 10 * 60 * 1000; 
+
         await URL.create({
             shortId,
             enteredUrl: url,
-            vistHistory: []
+            vistHistory: [] , 
+            expiresAt: Date.now() + expiryDuration
         });
 
         req.flash("success", "Short URL created successfully!");
@@ -47,6 +50,10 @@ module.exports.showURL = async (req, res, next) => {
 
         if (!entry) {
             return next(new ExpressError(404 ,"Short URL not found"));
+        }
+
+        if (entry.expiresAt && Date.now() > entry.expiresAt) {
+            return next(new ExpressError(410, "This short URL has expired"));
         }
 
         entry.vistHistory.push({ timestamp: Date.now() });
