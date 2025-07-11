@@ -35,3 +35,13 @@ A full-stack URL shortening service that lets users:
 -Delete URL 
 
 ![Shorten URL](screenshots/DELETE.png)
+
+
+## 🛠️ Tech Stack
+
+| Layer     | Technology                |
+|-----------|---------------------------|
+| Backend   | Node.js, Express.js       |
+| Database  | MongoDB (Mongoose)        |
+| Frontend  | HTML, CSS, Bootstrap, JS  |
+| Extras    | MongoDB TTL, QRServer API |
