@@ -11,9 +11,10 @@ const flash = require("connect-flash");
 const ExpressError = require("./utils/ExpressError") ; 
 const ejsMate = require("ejs-mate") ; 
 const methodOverride = require("method-override");
+const MongoStore = require("connect-mongo") ; 
 
 
-const dbURL = 'mongodb://127.0.0.1:27017/shortUrl' ; 
+const dbURL = process.env.MONGO_URL ; 
 
 main()
     .then(() => {console.log("Database connected")})
@@ -33,11 +34,32 @@ app.use(methodOverride('_method'));
 
 app.engine("ejs" , ejsMate) ; 
 
-app.use(session({
-    secret: process.env.SESSION_SECRET, 
-    resave: false,
-    saveUninitialized: true
-}));
+
+
+const store = MongoStore.create({
+    mongoUrl : dbURL , 
+    crypto : {
+        secret : process.env.SESSION_SECRET
+    }  
+}) ; 
+
+store.on("error", (err) => {
+    console.log("Error in mongostore", err);
+});
+
+const sessionOptions = {
+    store , 
+    secret : process.env.SESSION_SECRET , 
+    resave : false , 
+    saveUninitialized : true , 
+    cookie : {
+        expires : Date.now() + 7 * 24 * 60 * 60 * 1000 , 
+        maxAge : 7 * 24 * 60 * 60 * 1000 , 
+        httpOnly : true 
+    }
+}
+
+app.use(session(sessionOptions));
 
 
 app.use(flash());
