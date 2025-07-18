@@ -14,27 +14,27 @@ A full-stack URL shortening service that lets users:
 **Screenshot:**
 -Home Page
 
-![Shorten URL](screenshots/GET.png)
+![Shorten URL](images/GET.png)
 
 -POST Route Testing 
 
-![Shorten URL](screenshots/POST.png)
+![Shorten URL](images/POST.png)
 
 -IN DATABASE (based on the above screenshot)
 
-![Shorten URL](screenshots/POST_response.png)
+![Shorten URL](images/POST_response.png)
 
 -FRONTEND for seamless user interactivity
 
-![Shorten URL](screenshots/FRONTEND.png)
+![Shorten URL](images/FRONTEND.png)
 
 -Copy to Clipboard 
 
-![Shorten URL](screenshots/COPY.png)
+![Shorten URL](images/COPY.png)
 
 -Delete URL 
 
-![Shorten URL](screenshots/DELETE.png)
+![Shorten URL](images/DELETE.png)
 
 
 ## 🛠️ Tech Stack
